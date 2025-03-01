@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (taskAssignedCount > 0) {
                 taskAssignedCount--;
-                navbarCount--;
+                navbarCount++;
             }
 
             taskAssignedElement.innerText = taskAssignedCount;
