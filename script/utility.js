@@ -9,3 +9,5 @@ document.getElementById("randomColorChange").addEventListener("click", function 
     document.body.style.backgroundColor = randomColor;
     this.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 });
+
+
