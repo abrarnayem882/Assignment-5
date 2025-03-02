@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-200">
+    <header class="w-9/12 mx-auto pt-2 mb-5">
+        <nav class="rounded-xl bg-white my-3 px-5 py-2">
+            <div class="flex justify-between">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/logo.png" alt="" />
+                    <h3 class="text-4xl">Dev<span class="font-bold">Board</span></h3>
+                </div>
+                <div class="flex items-center gap-5">
+                    <button id="mainPage" class="btn text-1xl btn-primary">Back to Desk</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main  class="w-9/12 mx-auto pt-2 mb-5">
+        <h1 class="text-5xl font-bold text-center mb-5">Blogs</h1>
+
+        <div class="bg-white mb-5 rounded-lg">
+            <p class="text-3xl font-bold">Question-1: What are the different ways to select an element in the DOM?</p>
+            <hr>
+            <div class="text-3xl">
+                <ol>
+                    <li>1. document.getElementById('id') - Selects by ID.</li>
+                    <li>2. document.getElementsByClassName('class') - Selects by class.</li>
+                    <li>3. document.getElementsByTagName('tag') - Selects by tag name.</li>
+                    <li>4. document.querySelector('selector') - Selects the first matching element.</li>
+                    <li>5. document.querySelectorAll('selector') - Selects all matching elements.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="bg-white mb-5 rounded-lg">
+            <p class="text-3xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <hr>
+            <div class="text-3xl">
+                <ol>
+                    <li>* innerHTML - Returns or sets HTML content.</li>
+                    <li>* innerText - Returns or sets visible text.</li>
+                    <li>* textContent - Returns or sets all text.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="bg-white mb-5 rounded-lg">
+            <p class="text-3xl font-bold">Question-3: What is event delegation in the DOM?</p>
+            <hr>
+            <p class="text-3xl"><span class="font-bold">Answer: </span>A technique where a parent element handles events for dynamically added child elements using event.target. This improves performance by reducing event listeners.</p>
+        </div>
+        <div class="bg-white mb-5 rounded-lg">
+            <p class="text-3xl font-bold">Question-4: What is event bubbling in the DOM?</p>
+            <hr>
+            <p class="text-3xl"><span class="font-bold">Answer: </span>A process where an event on a child element propagates up through its ancestors in the DOM tree, triggering their respective event handlers unless stopped using event.stopPropagation().</p>
+        </div>
+        <div class="bg-white mb-5 rounded-lg">
+            <p class="text-3xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <hr>
+            <div class="text-3xl">
+                <ol>
+                    <li># Create: document.createElement('tag')</li>
+                    <li># Add: parent.appendChild(child) or parent.append(child)</li>
+                    <li># Remove: element.remove() or parent.removeChild(child)</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    <script src="script/newPage.js"></script>
+</body>
+</html>

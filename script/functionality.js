@@ -1,8 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Selecting elements
+
     const completedButtons = document.querySelectorAll("#btn-Completed"); // All buttons
     const taskAssignedElement = document.getElementById("task-box"); // Task count
-    const navbarCountElement = document.querySelector("nav .text-3xl.font-bold"); // Navbar count
+    const navbarCountElement = document.getElementById("nav-Counter"); // Navbar count
     const activityContainer = document.getElementById("activity-container"); // Activity log
     const clearHistoryButton = document.getElementById("clear-History"); // Clear History button
 
@@ -48,14 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     clearHistoryButton.addEventListener("click", function () {
         activityContainer.innerHTML = "";
-        alert("🗑 Activity history cleared!");
     });
-});
 
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
     const dateElement = document.getElementById("update-Date"); 
 
     function getFormattedDate() {
@@ -66,4 +62,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (dateElement) {
         dateElement.innerText = getFormattedDate();
     }
-});
+
+
+
+        const newPageButton = document.getElementById("newPage"); 
+
+        newPageButton.addEventListener("click", function () {
+            window.location.href = "newPage.html"; 
+        });
+
+
+
